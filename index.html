@@ -3,149 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
-    <style>
-        /* Generelle stilinnstillinger for nettsiden */
-        body {
-            font-family: 'Arial', sans-serif; /* Skrifttype for hele siden */
-            background-color: #f0f0f5; /* Lys bakgrunnsfarge */
-            background-image: linear-gradient(135deg, #6e7dff, #ff77e9); /* Bakgrunnsgradient */
-            background-size: cover; /* Sørger for at bakgrunnen dekker hele skjermen */
-            margin: 0; /* Fjern margin */
-            padding: 0; /* Fjern padding */
-            height: 100vh; /* Full høyde på skjermen */
-            display: flex; /* Bruk flexbox for sentrering av innhold */
-            justify-content: center; /* Sentraliserer innholdet horisontalt */
-            align-items: center; /* Sentraliserer innholdet vertikalt */
-            flex-direction: column; /* Arranger innholdet vertikalt */
-        }
-
-        /* Stilinnstillinger for headeren */
-        header {
-            background-color: rgba(40, 44, 52, 0.9); /* Mørk bakgrunn med litt gjennomsiktighet */
-            color: white; /* Hvit tekstfarge */
-            width: 100%; /* Full bredde */
-            text-align: center; /* Sentraliserer tekst */
-            padding: 30px; /* Større padding */
-            border-radius: 10px; /* Runde hjørner */
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Skygge for dybde */
-            margin-bottom: 30px; /* Litt avstand under headeren */
-        }
-
-        /* Stil for overskriften */
-        h1 {
-            font-size: 3.5em; /* Større overskrift */
-            margin: 0;
-            letter-spacing: 2px; /* Litt mer avstand mellom bokstavene */
-            font-weight: bold; /* Fet tekst */
-            text-transform: uppercase; /* Store bokstaver */
-        }
-
-        /* Stil for hovedinnholdet på siden */
-        main {
-            text-align: center; /* Sentraliserer teksten */
-            margin-top: 20px;
-            padding: 20px;
-            background-color: white; /* Hvit bakgrunn */
-            border-radius: 10px; /* Runde hjørner */
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Skygge for dybde */
-            width: 80%; /* Setter en bredde for hovedinnholdet */
-            max-width: 600px; /* Maks bredde på 600px */
-            transition: transform 0.3s ease-in-out; /* Jevn overgangseffekt */
-        }
-
-        /* Stil for seksjoner i main */
-        section {
-            margin-bottom: 20px;
-        }
-
-        /* Stil for knapper og lenker */
-        button, a {
-            padding: 15px 25px; /* Størrelse på knappene */
-            font-size: 1.4em; /* Økt fontstørrelse */
-            background-color: #28a745; /* Grønn bakgrunn */
-            color: white; /* Hvit tekstfarge */
-            border: none;
-            cursor: pointer;
-            border-radius: 10px; /* Runde kanter */
-            text-decoration: none; /* Fjern understrekning på lenker */
-            display: inline-block;
-            margin: 15px 0;
-            transition: all 0.3s ease; /* Jevn overgangseffekt */
-        }
-
-        /* Hover-effekt for knapper og lenker */
-        button:hover, a:hover {
-            background-color: #218838; /* Endrer bakgrunnsfargen når musen er over */
-            transform: scale(1.05); /* Liten skaleringseffekt */
-        }
-
-        /* Stil for footer (bunnen på siden) */
-        footer {
-            margin-top: 40px;
-            background-color: rgba(40, 44, 52, 0.9); /* Mørk bakgrunn med gjennomsiktighet */
-            color: white; /* Hvit tekstfarge */
-            padding: 10px;
-            text-align: center;
-            width: 100%;
-            border-radius: 5px; /* Runde kanter */
-            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3); /* Skygge på toppen */
-        }
-
-        /* Stil for lenker i footer */
-        footer a {
-            color: #f7f7f7; /* Hvit farge på lenkene */
-            text-decoration: none; /* Fjern understrekning */
-            font-weight: bold; /* Fet font for lenkene */
-        }
-
-        footer a:hover {
-            color: #ff77e9; /* Endre farge når musen er over lenken */
-        }
-
-        /* Responsiv design: Justering for små skjermer */
-        @media (max-width: 600px) {
-            header {
-                padding: 20px;
-            }
-
-            main {
-                width: 90%; /* Justerer bredden på hovedinnholdet på små skjermer */
-                padding: 15px;
-            }
-
-            h1 {
-                font-size: 2.5em; /* Mindre overskrift på små skjermer */
-            }
-
-            button, a {
-                padding: 10px 20px; /* Minsker størrelsen på knapper */
-                font-size: 1.2em;
-            }
-        }
-    </style>
+    <title>Snake Game - Last ned</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Velkommen til Snake Game!</h1> <!-- Tittel på nettsiden -->
+        <h1>Velkommen til Snake Game!</h1>
+        <p>Last ned og spill vårt klassiske Snake-spill laget i Python.</p>
     </header>
 
     <main>
-        <p>Last ned spillet og brukerhåndboken fra lenkene under:</p> <!-- Beskrivelse -->
-        
-        <!-- Nedlastingslenke for .exe-filen -->
-        <a href="eksamen.exe" download>
-            <button>Last ned Snake Game</button>
-        </a>
-        
-        <!-- Nedlastingslenke for brukerhåndbok (PDF) -->
-        <a href="Hvordan Spillet Fungerer.pdf" download>
-            <button>Last ned Brukerveiledning</button>
-        </a>
+        <section id="download">
+            <h2>Last ned spillet</h2>
+            <p>Klikk på lenken under for å laste ned Snake-spillet:</p>
+            <a href="download/snake_game.zip" download>
+                <button>Last ned Snake Game</button>
+            </a>
+        </section>
+
+        <section id="guide">
+            <h2>Brukerveiledning</h2>
+            <p>Du kan laste ned PDF-versjonen av brukerhåndboken her:</p>
+            <a href="download/user_guide.pdf" download>
+                <button>Last ned Brukerveiledning</button>
+            </a>
+        </section>
     </main>
 
     <footer>
-        <p>© 2024 Snake Game - Laget av Alexandru | <a href="https://github.com/Alexandru-ui/Snake-Game">GitHub Repository</a></p> <!-- Footer med lenke til GitHub repo -->
+        <p>&copy; 2024 Snake Game. Alle rettigheter reservert.</p>
     </footer>
 </body>
 </html>
