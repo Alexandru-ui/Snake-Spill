@@ -1,0 +1,11 @@
+NETT SIDE
+https://alexandru-ui.github.io/Snake-Spill/ # link til nett siden 
+
+HASTIGET PÅ SLANGEN
+if keys[pygame.K_PLUS]:    
+             speed += 1
+        if keys[pygame.K_MINUS]:
+             speed -= 1
+
+        if speed < 1:
+           speed = 1
